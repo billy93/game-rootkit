@@ -57,7 +57,7 @@
             this.bitmapMsg2.destroy();
 
             if(!Video.isPlaying()){
-                Video.play("movies/opening.webm");        
+                Video.play("movies/opening.mp4");        
             }
         }
 
