@@ -147,7 +147,7 @@ const setupTS = function() {
                 locRight: -0.5 + t.buttonBorderRightOffset,
                 locBottom: t.buttonDiameter + t.buttonBorderBottomOffset,
                 scale: 1,
-                img: "/img/controls/B"
+                img: "img/controls/B"
             },
             {
                 label: "X",
@@ -155,7 +155,7 @@ const setupTS = function() {
                 locRight: 2 * t.buttonDiameter + t.buttonBorderRightOffset,
                 locBottom: t.buttonDiameter + t.buttonBorderBottomOffset,
                 scale: 1,
-                img: "/img/controls/X"
+                img: "img/controls/X"
             },
             {
                 label: "Y",
