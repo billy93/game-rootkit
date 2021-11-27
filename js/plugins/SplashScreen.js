@@ -101,7 +101,7 @@
         const x = 20;
         const y = Graphics.height / 4;
         const maxWidth = Graphics.width - x * 2;
-        const text = "Press any key to continue";
+        const text = "Press A to continue";
         this.bitmapMsg1 = this._gameTitleSprite.bitmap;
         this.bitmapMsg1.fontFace = $gameSystem.mainFontFace();
         this.bitmapMsg1.outlineColor = "black";
