@@ -73,6 +73,7 @@ class Main {
         this.xhrSucceeded = false;
         this.loadCount = 0;
         this.error = null;
+        this.signer = null;
     }
 
     run() {
@@ -294,6 +295,21 @@ class Main {
             console.log(e);
             return [-1,-1];
         }
+    }
+
+    async connect(){
+        const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+        // Prompt user for account connections
+        await provider.send("eth_requestAccounts", []);
+        this.signer = provider.getSigner();
+        const network = await provider.getNetwork();
+        this.chainId = network.chainId;
+        this.address = await this.signer.getAddress();
+        provider.on("network", (newNetwork, oldNetwork) => {
+            if (oldNetwork) {
+                this.chainId = newNetwork.chainId;
+            }
+        });
     }
 
     showLoadingSpinner() {

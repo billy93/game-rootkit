@@ -7,5 +7,6 @@ var $plugins =
 {"name":"SplashScreen","status":false,"description":"","parameters":{}},
 {"name":"TextPicture","status":false,"description":"Displays text as a picture.","parameters":{}},
 {"name":"RF_CustomWindowMessage","status":false,"description":"(v.1.0) Create custom window. View documentation for plugin commands.","parameters":{}},
-{"name":"TSGamepad","status":true,"description":"[v1.0] OnScreen Controls for RMMZ","parameters":{"dpad":"1","stick":"60","exten":".svg","bcAd":"#7dc242","bcBd":"#ed1c24","bcXd":"#24bcee","bcYd":"#f0ea1b"}}
+{"name":"TSGamepad","status":true,"description":"[v1.0] OnScreen Controls for RMMZ","parameters":{"dpad":"1","stick":"60","exten":".svg","bcAd":"#7dc242","bcBd":"#ed1c24","bcXd":"#24bcee","bcYd":"#f0ea1b"}},
+{"name":"Chain","status":true,"description":"[v1.0] Blockchain Ethers Connect for RMMZ","parameters":{}}
 ];
